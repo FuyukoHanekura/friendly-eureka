@@ -1,0 +1,33 @@
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / Tooling
+node_modules/
+dist/
+npm-debug.log*
+yarn.lock
+.pnpm-store/
+coverage/
+
+# Sass / CSS Artifacts
+public/assets/css/*.map
+
+# PHP / Composer
+vendor/
+
+# Cache
+*.cache
+.cache/
+.tpm/
+
+# Env & Secrets
+.env
+.env.*
+.secrets/
+scripts/*key
+
+# Media dumps
+assets/raw/
