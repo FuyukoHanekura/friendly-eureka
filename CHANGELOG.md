@@ -14,11 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - (placeholder)
 
-## [0.1.0] - 2025-09-16
+## [0.2.0] - 2025-09-17
 ### Added
-- Repository initialized with README, LICENSE, CONTENT_LICENSE, .gitignore, and CHANGELOG
-- Files for serveur setup
+- Screenshots of website wireframe
 
 ## [0.1.1] - 2025-09-16
 ### Added
 -LICENSE-CC-BY-SA.txt to be displayed as a tab
+
+## [0.1.0] - 2025-09-16
+### Added
+- Repository initialized with README, LICENSE, CONTENT_LICENSE, .gitignore, and CHANGELOG
+- Files for serveur setup
