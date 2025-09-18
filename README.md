@@ -1,12 +1,11 @@
 # Portfolio
 A minimalist portfolio showcasing gameplay programming projects (UE5, Unity, Godot) and hobbies.
-Tech: PHP (templating), HTML/CSS/JS, SCSS pipeline, NGINX + PHP-FPM.
+Tech: PHP (templating), HTML/CSS/JS, NGINX + PHP-FPM.
 
 ## Structure
 ```
 /public             # Web root (index.php, assets)
 /src/partials       # header.php, footer.php, components
-/scss               # tokens, components, pages
 /assets             # source media (optimized -> public/assets)
 /scripts            # deploy/build tools
 ```
