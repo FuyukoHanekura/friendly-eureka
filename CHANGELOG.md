@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - (placeholder)
 
+## [0.4.0] - 2025-09-28
+### Added
+- Short presentation section in landing page
+
 ## [0.3.0] - 2025-09-18
 ### Added
 - index.html, main.css and main.js are constituing the core of the portfolio
