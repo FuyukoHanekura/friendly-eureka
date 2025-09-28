@@ -54,6 +54,7 @@ button
 	--lspace-100: 100px;
 	--lspace-110: 110px;
 	--lspace-130: 130px;
+	--lspace-150: 150px;
 	--lspace-220: 220px;
 	--lspace-260: 260px;
 	--lspace-400: 400px;
@@ -170,7 +171,7 @@ nav
 {
 	font-size: 4.5rem;
 	font-weight: var(--font-weight-700);
-	margin-bottom: var(--lspace-0);
+	margin: var(--lspace-0);
 }
 
 .featured-work
@@ -185,6 +186,37 @@ nav
 	min-height: 19.375rem;
 }
 
+hr.separator.radii-full
+{
+	border: none;
+	background: var(--muted);
+	height: 5px;
+	margin: var(--lspace-75) var(--lspace-5);
+	border-radius: var(--radii-full);
+}
+
+#Myself
+{
+	/* background: var(--surface); */
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	column-gap: var(--lspace-150);
+}
+
+#Myself .about-me
+{
+	width: 60%;
+	font-size: 2rem;
+}
+
+#Myself p::first-letter
+{
+	font-size: 4.5rem;
+	font-weight: var(--font-weight-700);
+}
 footer
 {
 	height: 7.5rem;
