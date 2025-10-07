@@ -3,6 +3,15 @@
 	box-sizing: border-box;
 }
 
+@media (prefers-reduced-motion: reduce)
+{
+	*
+	{
+		animation: none !important;
+		transition: none !important;
+	}
+}
+
 html,body
 {
 	margin: 0;
@@ -103,6 +112,7 @@ html
 	font-family: var(--font-sans);
 	background: var(--bg);
 	color: var(--text);
+	scroll-behavior: smooth;
 }
 
 header
@@ -126,11 +136,13 @@ nav
 	
 }
 
-#carousel
+.nav-right
 {
-	height: 750px;
-	background-image: url("../img/BackgroundThumbnail.png");
-	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	column-gap: var(--lspace-20);
 }
 
 .chip
@@ -142,10 +154,11 @@ nav
 	color: var(--muted);
 	text-align: center;
 	font-size: 1.5rem;
-	border: 1px solid var(--bg);
+	border: 1px solid rgba(255, 255, 255, 0);
 	border-radius: var(--radii-xl);
-	/* backdrop-filter: blur(0px) saturate(200%); */
-	/* -webkit-backdrop-filter: blur(0px) saturate(200%); */
+	padding: var(--lspace-5);
+	/* backdrop-filter: blur(1px) saturate(120%); */
+	/* -webkit-backdrop-filter: blur(1px) saturate(120%); */
 }
 
 .chip:hover
@@ -153,9 +166,16 @@ nav
 	color: var(--text);
 	border: 1px solid var(--muted);
 	border-radius: var(--radii-xl);
-	backdrop-filter: blur(25px) saturate(200%);
-	-webkit-backdrop-filter: blur(5px) saturate(200%);
-	background-color: rgba(0, 0, 0, 0);
+	backdrop-filter: blur(15px) saturate(200%);
+	-webkit-backdrop-filter: blur(15px) saturate(200%);
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#carousel
+{
+	height: 750px;
+	background-image: url("../img/BackgroundThumbnail.png");
+	background-size: cover;
 }
 
 .hero
@@ -166,6 +186,7 @@ nav
 	justify-content: center;
 	padding: var(--lspace-130) var(--lspace-400) var(--lspace-0) var(--lspace-400);
 	width: 100%;
+	row-gap: var(--lspace-40);
 }
 
 .title-card
@@ -235,7 +256,7 @@ hr.separator.radii-full
 	border-radius: var(--radii-full);
 }
 
-#Myself
+#about
 {
 	/* background: var(--surface); */
 
@@ -244,19 +265,28 @@ hr.separator.radii-full
 	align-items: center;
 	justify-content: center;
 	column-gap: var(--lspace-150);
+
+	margin-top: var(--lspace-100);
 }
 
-#Myself .about-me
+#about img
+{
+	aspect-ratio: 1/1;
+	border-radius: var(--radii-xl);
+}
+
+#about .about-me
 {
 	width: 60%;
 	font-size: 2rem;
+	font-style: italic;
 }
 
-#Myself p::first-letter
+/* #about p::first-letter
 {
 	font-size: 4.5rem;
 	font-weight: var(--font-weight-700);
-}
+} */
 footer
 {
 	height: 7.5rem;
@@ -272,6 +302,28 @@ footer div
 	padding: var(--lspace-0) var(--lspace-30);
 
 	height: 100%;
+}
+
+.chip-2
+{
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: var(--lspace-5);
+
+	border: 1px solid rgba(103, 107, 126, 0.1);
+	border-radius: var(--radii-xl);
+}
+
+.chip-2:hover
+{
+	border: 1px solid var(--muted);
+}
+
+.social
+{
+	padding: var(--lspace-10);
 }
 
 footer button
