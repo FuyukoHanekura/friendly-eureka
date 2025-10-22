@@ -174,8 +174,9 @@ nav
 #carousel
 {
 	height: 750px;
-	background-image: url("../img/BackgroundThumbnail.png");
+	background-image: url("../img/anime-frieren-nouveau-trailer-principal.png");
 	background-size: cover;
+	background-position: center;
 }
 
 .hero
@@ -202,6 +203,7 @@ nav
 {
 	font-size: 8.125rem;
 	font-weight: var(--font-weight-900);
+	
 }
 
 .hero-subtitle
