@@ -136,10 +136,10 @@ nav
 	margin: var(--lspace-20) var(--lspace-25);
 	max-height: 120px;
 	
-	border: .25px solid var(--bg);
+	border: 1px solid var(--bg);
 	border-radius: 1rem;
-	backdrop-filter: blur(5px) saturate(200%);
-	-webkit-backdrop-filter: blur(5px) saturate(200%);
+	backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%);
 	background-color: rgba(0, 0, 0, 0.05);
 	
 }
