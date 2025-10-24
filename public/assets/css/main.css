@@ -190,14 +190,15 @@ nav
 
 .hero
 {
+	position:relative;
 	display: flex;
   	flex-direction: column;
   	align-items: center;
-  	justify-content: space-between;
+  	justify-content: center;
 
   	width: 100%;
-  	min-height: inherit;
-  	padding-top: var(--lspace-220);
+  	min-height: 100vh;
+  	/* padding-top: var(--lspace-220); */
 
 }
 
@@ -208,6 +209,7 @@ nav
 	align-items: center;
 	justify-content: center;
 	row-gap: var(--lspace-40);
+	text-align: center;
 }
 
 .hero-title
@@ -232,9 +234,13 @@ nav
 
 .scroll-indicator
 {
-	display: inline-flex;
+	position:absolute;
+	bottom: var(--lspace-50);
+	left: 50%;
+	transform: translateX(-50%);
+	/* display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; */
 
 }
 
