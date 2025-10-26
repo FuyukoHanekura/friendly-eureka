@@ -14,19 +14,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - (placeholder)
 
-## [0.5.0] - 2025-
+## [0.5.0] - 2025-10-26
 ### Added
 - Thumbnails for hero section
 - Class for button in nav called chip
 - Class for button on right-side of nav to add spacing
 - Aria label for SVG chevron on the hero section
 - Class for button in footer called chip-2
+- Glassmorphism for Nav bar and button
+- Carousel Slider
 
 ### Changed
 - Move assets directory, inside public directory
 - Changed css, js and img path
 - Renamed id Myself to id about for more clarity
 - Switch id Carousel row for more clarity
+- Hero section takes the full viewport height
+- Hero class behavior, with chevron now at the bottom and title card class in the middle of the carousel slider
 
 ### Removed
 - Separator between Featured Projects and About sections
