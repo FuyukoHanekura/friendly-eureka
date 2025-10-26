@@ -184,10 +184,28 @@ nav
 {
 	/* height: 750px; */
 	min-height: 100vh;
+	/* background-image: url("../img/BackgroundThumbnail2.png");
+	background-size: cover;
+	background-position: center; */
+	position: relative;
+	overflow: hidden;
+}
+
+#carousel .bg
+{
+	position:absolute;
+	inset: 0;
 	background-image: url("../img/BackgroundThumbnail2.png");
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
+	transition: opacity .8s ease;
+	z-index: -1;
+	opacity: 0;
 }
+
+#carousel[data-active="a"] .bg-a {opacity: 1;}
+#carousel[data-active="b"] .bg-b {opacity: 1;}
 
 .hero
 {
@@ -213,6 +231,14 @@ nav
 	justify-content: center;
 	row-gap: var(--lspace-40);
 	text-align: center;
+
+	transition: opacity .35s ease, transform .35s ease;
+}
+
+.title-card.is-out
+{
+	opacity: 0;
+	transform: translateY(8px);
 }
 
 .hero-title
