@@ -3,31 +3,44 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+	<title>Thomas - Gameplay Programmer</title>
+	<meta name="description" content="Portfolio of Thomas, a gameplay programmer specializing in Unreal Engine, Unity, and Godot.">
+	
+	<!-- OpenGraph tags -->
+	<meta property="og:title" content="Gameplay Programmer">
+	<meta property="og:description" content="I'm studying to become a gameplay programmer, focusing on Unreal Engine, Unity, and Godot. I love creating things, and learn new skills.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="assets/img/Thumbnail.png">
+
 	<!-- Preconnect helps the font load faster -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../assets/css/main.css">
-
+	
+	<!-- Style sheet & Favicon -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="shortcut icon" href="assets/img/Thumbnail.png" type="image/x-icon">
 	<!-- Scripts -->
-	<script src="../assets/js/main.js"></script>
+	<script src="assets/js/main.js" defer></script>
 </head>
 <body>
 	<header>
 		<nav>
 			<div>
-				<button>Home<br/>トップページ</button>
+				<a class="chip" href="#"><span>Home</span><span>トップページ</span></a>
 			</div>
-			<div>
-				<button>Portfolio<br/>ポートフォリオ</button>
-				<button>About Me<br/>私について</button>
+			<div class="nav-right">
+				<a class="chip" href="#"><span>Portfolio</span><span>ポートフォリオ</span></a>
+				<a class="chip" href="#"><span>About Me</span><span>私について</span></a>
 			</div>
 		</nav>
 	</header>
 	<main>
 		<section>
-			<div id="carousel">
+			<div id="carousel" class="carousel" aria-roledescription="carousel" aria-label="Hero carousel" tabindex="0">
+				<div class="bg bg-a"></div>
+				<div class="bg bg-b"></div>
+				
 				<div class="hero">
 					<div class="title-card">
 						<h1 class="hero-title">Portfolio</h1>
@@ -36,24 +49,26 @@
 							<span>Portfolio</span>
 						</div>
 					</div>
-					<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-down-icon lucide-chevrons-down"><path d="m7 6 5 5 5-5"/><path d="m7 13 5 5 5-5"/></svg>
+					<a href="#work" class="scroll-indicator" aria-label="Scroll to featured projects">
+						<svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-down-icon lucide-chevrons-down chevron" aria-label="Scroll to featured projects"><path d="m7 6 5 5 5-5"/><path d="m7 13 5 5 5-5"/></svg>
+					</a>
 				</div>
 			</div>
 		</section>
 		<section id="work">
 			<h2>Featured Projects</h2>
 			<div class="featured-work">
-				<img src="../assets/img/Thumbnail.png" alt="A thumbnail image showing a game project.">
-				<img src="../assets/img/Thumbnail.png" alt="A thumbnail image showing a game project.">
-				<img src="../assets/img/Thumbnail.png" alt="A thumbnail image showing a game project.">
-				<img src="../assets/img/Thumbnail.png" alt="A thumbnail image showing a game project.">
-				<img src="../assets/img/Thumbnail.png" alt="A thumbnail image showing a game project.">
+				<img src="assets/img/ProjectThumbnail.png" alt="A thumbnail image showing a game project.">
+				<img src="assets/img/ProjectThumbnail.png" alt="A thumbnail image showing a game project.">
+				<img src="assets/img/ProjectThumbnail.png" alt="A thumbnail image showing a game project.">
+				<img src="assets/img/ProjectThumbnail.png" alt="A thumbnail image showing a game project.">
+				<img src="assets/img/ProjectThumbnail.png" alt="A thumbnail image showing a game project.">
 			</div>
 		</section>
-		<hr class="separator radii-full">
-		<section id="Myself">
+		<!-- <hr class="separator radii-full"> -->
+		<section id="about">
 			<div>
-				<img src="../assets/img/Thumbnail.png" alt="Profile picture of the portfolio owner.">
+				<img src="assets/img/Thumbnail.png" alt="Profile picture of the portfolio owner.">
 			</div>
 			<div class="about-me">
 				<p>I am a gameplay programmer studying at ISART DIGITAL, building projects with Unreal Engine, Unity, and Godot. I'm passionate about 3C, UI/UX, and tools. I aim to create games and interactive experiences that deliver memorable moments for players.</p>
@@ -62,9 +77,9 @@
 	</main>
 	<footer>
 		<div>
-			<button>Legal - 2025<br/>リーガル - 2025</button>
-			<button class="versionning">Ver. 0.3.0</button>
-			<button>Social<br/>SNS</button>
+			<a class="chip-2"><span>Legal - 2025</span><span>リーガル - 2025</span></a>
+			<a class="versioning chip-2">Ver. 0.3.0</a>
+			<a class="chip-2 social"><span>Social</span><span>SNS</span></a>
 		</div>
 	</footer>
 </body>
