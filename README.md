@@ -1,11 +1,13 @@
 # Portfolio
 A minimalist portfolio showcasing gameplay programming projects (UE5, Unity, Godot) and hobbies.
-Tech: PHP (templating), HTML/CSS/JS, NGINX + PHP-FPM.
+Tech: HTML/CSS/JS, NGINX + PHP-FPM.
+
+![GitHub Created At](https://img.shields.io/github/created-at/fuyukohanekura/friendly-eureka) ![GitHub Tag](https://img.shields.io/github/v/tag/fuyukohanekura/friendly-eureka) ![Maintenance](https://img.shields.io/maintenance/yes/2025) ![GitHub last commit](https://img.shields.io/github/last-commit/fuyukohanekura/friendly-eureka)
+[![Code License](https://img.shields.io/badge/Code-MIT-blue?style=flat)](LICENSE) [![Content License](https://img.shields.io/badge/Content-CC%20BY--SA%204.0-pink?style=flat)](CONTENT_LICENSE)
 
 ## Structure
 ```
 /public             # Web root (index.php, assets)
-/src/partials       # header.php, footer.php, components
 /assets             # source media (optimized -> public/assets)
 /scripts            # deploy/build tools
 ```
@@ -16,3 +18,12 @@ Tech: PHP (templating), HTML/CSS/JS, NGINX + PHP-FPM.
 
 ## Changelog
 See [`CHANGELOG.md`](CHANGELOG.md) (Keep a Changelog, SemVer).
+
+## Credits
+Inspired by: 
+- [Daginatsuko](https://daginatsuko.com/)
+- [Amy Elliott](https://gamedev.amy-portfolio.com)
+
+Typography: [Noto Sans JP](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
+
+Thanks a lot for the inspiration!
