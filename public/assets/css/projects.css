@@ -1,0 +1,138 @@
+@import url('base.css');
+.banner
+{
+    background-image: url(../img/BackgroundThumbnail.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+}
+.gradient
+{
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, var(--bg) 100%);
+    min-height: inherit;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 30px;
+}
+
+.project-title-card
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    column-gap: var(--lspace-10);
+    max-width: 1160px;
+}
+
+.project-thumbnail
+{
+    aspect-ratio: 1/1;
+    width: 256px;
+    object-fit: cover;
+    border-radius: var(--radii-lg);
+}
+
+.project-info
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-10);
+}
+
+.project-title, .project-subtitle
+{
+    margin: 0;
+}
+
+.project-details
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    column-gap: var(--lspace-10);
+}
+
+.project-desc
+{
+    font-size: .75rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.project-link
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: var(--lspace-20);
+}
+
+.pill
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 10px;
+    font-size:smaller;
+    font-weight: var(--font-weight-300);
+
+    /* background: rgb(70, 69, 69); */
+    backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%);
+	background-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.05);
+
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+}
+
+.twitch
+{
+    background-color: #9146FF;
+}
+.godot-engine
+{
+    background-color: #478CBF;
+}
+.unity
+{
+    background-color: #000000;
+}
+.unreal-engine
+{
+    background-color: #0E1128;
+}
+.dotnet
+{
+    background-color: #512BD4;
+}
+
+.chip
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    /* font-weight: var(--font-weight-300); */
+
+    /* background: rgb(70, 69, 69); */
+
+    border: 1px solid var(--muted);
+    border-radius: var(--radii-md);
+    column-gap: var(--lspace-5);
+
+    backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%);
+	background-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 10px 10px 15px 0px rgba(255, 255, 255, 0.05);
+}
