@@ -12,12 +12,28 @@
     min-height: inherit;
 }
 
+.container
+{
+    width: 100%;
+    max-width: 1160px;
+    margin-inline: auto;
+    padding-inline: var(--lspace-20);
+}
+
 main
 {
     display: flex;
     flex-direction: column;
 
+    align-items: center;
+
     row-gap: 30px;
+}
+
+main > section 
+{
+  width: 100%;
+  max-width: 1160px;
 }
 
 .project-title-card
@@ -54,7 +70,7 @@ main
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     
     column-gap: var(--lspace-10);
 }
@@ -70,8 +86,139 @@ main
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     column-gap: var(--lspace-20);
+}
+
+.project-mission
+{
+    display: flex;
+    flex-direction: column;
+
+    
+    row-gap: var(--lspace-20);
+    
+}
+
+.project-mission > h1
+{
+    margin: 0px;
+
+    text-align: center;
+
+}
+
+
+.missions-grid
+{
+    /* display: table;
+    max-width: 800px;
+    width: 100%; */
+
+    display: grid;
+    
+    flex-direction: row;
+    grid-template-columns: repeat(8, fit-content(100%));
+    grid-template-rows: repeat(2, 30px);
+    row-gap: 15px;
+    column-gap: 15px;
+
+}
+
+.media
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--lspace-30);
+}
+
+.media > div > h1
+{
+    margin: 0px;
+    text-align: center;
+}
+
+.media-first-section
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-30);
+}
+
+.media-second-section
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-30);
+}
+
+.image-gallery
+{
+    display: flex;
+    flex-direction: column;
+
+    column-gap: var(--lspace-20);
+    row-gap: var(--lspace-20);
+}
+
+.gallery-image
+{
+    aspect-ratio: 16/9;
+    width: 640px;
+}
+
+.credits
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-10);
+}
+
+.credits > h1
+{
+    margin: 0px;
+    text-align: center;
+}
+
+.credit-box > div > h2
+{
+    margin: 0px;
+}
+
+.credit-box
+{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: var(--lspace-20);
+}
+
+.credit-box > div
+{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: var(--lspace-20);
+}
+
+.credit-card
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.25rem;
+}
+
+.name-card
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: var(--lspace-10);
+    
 }
 
 .pill
@@ -135,4 +282,32 @@ main
 	-webkit-backdrop-filter: blur(15px) saturate(250%);
 	background-color: rgba(255, 255, 255, 0.10);
     box-shadow: 10px 10px 15px 0px rgba(255, 255, 255, 0.05);
+}
+
+.mission-pill
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 10px;
+    font-size:smaller;
+    font-weight: var(--font-weight-300);
+
+    /* background: rgb(70, 69, 69); */
+    backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%);
+	background-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.05);
+
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+}
+
+.profile-picture
+{
+    aspect-ratio: 1/1;
+    width: 64px;
+    object-fit: cover;
+    border-radius: var(--radii-lg);
 }
