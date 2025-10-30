@@ -207,12 +207,77 @@ main > section
 
 .credit-card
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    border:1px solid var(--muted);
+    border-radius:var(--radii-xl);
+    
+    font-size:1.25rem;
+    
+    position:relative;
+    overflow:hidden; 
+    
+    padding:var(--lspace-10);
+    
+    background-color: rgba(255, 255, 255, 0.034);
+}
 
-    font-size: 1.25rem;
+.credit-card > *
+{ 
+    position:relative;
+    z-index:2;
+}
+
+.credit-card::before{
+    content:""; 
+    position:absolute; 
+    top:0;
+    right:0;
+    height:100%;
+    width: var(--img-width, 50%);
+    background-image: var(--card-img);
+    background-size: cover; 
+    background-position: center;
+    z-index:0;
+
+    -webkit-mask-image: linear-gradient(to right, rgba(255, 255, 255, 0.034) 0%, rgba(0,0,0,.85) 40%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to right, rgba(255, 255, 255, 0.034) 0%, rgba(0,0,0,.85) 40%, rgba(0,0,0,1) 100%);
+    opacity: .95;
+}
+
+.custom-bg-pos-1::before
+{
+        background-position: 0 -150px;
+}
+
+
+.credit-card::after
+{
+    content:""; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+    height:100%;
+    width: var(--img-width, 50%); 
+    z-index:1; 
+    pointer-events:none;
+    background: linear-gradient(to left, rgb(0, 0, 0) 0%, rgba(0,0,0,.75) 40%, rgba(0,0,0,0) 100%);
+}
+
+/* Fallback if masks aren’t supported: keep image; rely on darker overlay fade */
+@supports not (mask-image: linear-gradient(black, transparent))
+{
+    .credit-card::before 
+    { 
+        -webkit-mask-image:none;
+        mask-image:none;
+    }
+    .credit-card::after
+    {
+        background: linear-gradient(to left, rgba(0,0,0,.75) 0%, rgba(0,0,0,.55) 35%, rgba(0,0,0,.15) 65%, rgba(0,0,0,0) 100%);
+    }
 }
 
 .name-card
