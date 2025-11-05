@@ -1,0 +1,444 @@
+@import url('base.css');
+.banner
+{
+    background-image: url(../img/Orenda1.png);
+    background-size: cover;
+    background-position: center;
+    top: -50px;
+    min-height: 40vh;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+    padding: var(--lspace-20);
+    z-index: 2;
+    row-gap: var(--lspace-10);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header > a
+{
+    border: 1px solid var(--muted);
+	border-radius: var(--radii-lg);
+	/* backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%); */
+	background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--lspace-10);
+}
+
+header > a:hover
+{
+    border: 1px solid var(--text);
+    backdrop-filter: blur(15px) saturate(300%);
+    -webkit-backdrop-filter: blur(15px) saturate(300%);
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+
+
+
+.gradient
+{
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, var(--bg) 100%);
+    min-height: inherit;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1160px;
+    margin-inline: auto;
+    padding-inline: var(--lspace-20);
+
+    position: relative;
+    top: -125px;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    row-gap: 30px;
+}
+
+main > section 
+{
+  width: 100%;
+  max-width: 1160px;
+}
+
+.project-title-card
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    column-gap: var(--lspace-10);
+    max-width: 1160px;
+}
+
+.project-thumbnail
+{
+    aspect-ratio: 1/1;
+    width: 256px;
+    object-fit: cover;
+    border-radius: var(--radii-lg);
+}
+
+.project-info
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-10);
+}
+
+.project-title, .project-subtitle
+{
+    margin: 0;
+}
+
+.project-details
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    
+    column-gap: var(--lspace-10);
+}
+
+.project-desc
+{
+    font-size: 1.125rem;
+    margin: 0;
+    max-width: 500px;
+}
+
+.project-link
+{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    column-gap: var(--lspace-20);
+}
+
+.project-mission
+{
+    display: flex;
+    flex-direction: column;
+
+    
+    row-gap: var(--lspace-20);
+    
+}
+
+.project-mission > h1
+{
+    margin: 0px;
+
+    text-align: center;
+
+}
+
+
+.missions-grid
+{
+    /* display: table;
+    max-width: 800px;
+    width: 100%; */
+
+    display: grid;
+    
+    flex-direction: row;
+    justify-content: center;
+
+    grid-template-columns: repeat(8, fit-content(100%));
+    grid-template-rows: repeat(2, 30px);
+    row-gap: 15px;
+    column-gap: 15px;
+
+}
+
+.media
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--lspace-30);
+}
+
+.media > div > h1
+{
+    margin: 0px;
+    text-align: center;
+}
+
+video
+{
+    aspect-ratio: 16/9;
+    width: 640px;
+    border-radius: var(--radii-lg);
+    /* background-color: var(--muted); */
+    
+}
+
+.media-first-section
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-30);
+}
+
+.media-second-section
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-30);
+}
+
+.image-gallery
+{
+    display: flex;
+    flex-direction: column;
+
+    column-gap: var(--lspace-20);
+    row-gap: var(--lspace-20);
+}
+
+.gallery-image
+{
+    aspect-ratio: 16/9;
+    width: 640px;
+}
+
+.credits
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-10);
+}
+
+.credits > h1
+{
+    margin: 0px;
+    text-align: center;
+}
+
+.credit-box > div > h2
+{
+    margin: 0px;
+}
+
+.credit-box
+{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: var(--lspace-20);
+}
+
+.credit-box > div
+{
+    display: flex;
+    flex-direction: column;
+
+    row-gap: var(--lspace-20);
+}
+
+.credit-card
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    border:1px solid var(--muted);
+    border-radius:var(--radii-xl);
+    
+    font-size:1.25rem;
+    
+    position:relative;
+    overflow:hidden; 
+    
+    padding:var(--lspace-10);
+    
+    background-color: rgba(255, 255, 255, 0.034);
+}
+
+.credit-card > *
+{ 
+    position:relative;
+    z-index:2;
+}
+
+.credit-card::before{
+    content:""; 
+    position:absolute; 
+    top:0;
+    right:0;
+    height:100%;
+    width: var(--img-width, 50%);
+    background-image: var(--card-img);
+    background-size: cover; 
+    background-position: center;
+    z-index:0;
+
+    -webkit-mask-image: linear-gradient(to right, rgba(255, 255, 255, 0.034) 0%, rgba(0,0,0,.85) 40%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to right, rgba(255, 255, 255, 0.034) 0%, rgba(0,0,0,.85) 40%, rgba(0,0,0,1) 100%);
+    opacity: .95;
+}
+
+.custom-bg-pos-1::before
+{
+        background-position: 0 -150px;
+}
+
+.custom-bg-pos-2::before
+{
+        background-position: 0 -200px;
+}
+
+.credit-card::after
+{
+    content:""; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+    height:100%;
+    width: var(--img-width, 50%); 
+    z-index:1; 
+    pointer-events:none;
+    background: linear-gradient(to left, rgb(0, 0, 0) 0%, rgba(0,0,0,.75) 40%, rgba(0,0,0,0) 100%);
+}
+
+/* Fallback if masks aren’t supported: keep image; rely on darker overlay fade */
+@supports not (mask-image: linear-gradient(black, transparent))
+{
+    .credit-card::before 
+    { 
+        -webkit-mask-image:none;
+        mask-image:none;
+    }
+    .credit-card::after
+    {
+        background: linear-gradient(to left, rgba(0,0,0,.75) 0%, rgba(0,0,0,.55) 35%, rgba(0,0,0,.15) 65%, rgba(0,0,0,0) 100%);
+    }
+}
+
+.name-card
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: var(--lspace-10);
+    
+}
+
+.pill
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 10px;
+    font-size:smaller;
+    font-weight: var(--font-weight-300);
+
+    /* background: rgb(70, 69, 69); */
+    backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%);
+	background-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.05);
+
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+}
+
+.twitch
+{
+    background-color: #9146FF;
+}
+.godot-engine
+{
+    background-color: #478CBF;
+}
+.unity
+{
+    background-color: #000000;
+}
+.unreal-engine
+{
+    background-color: #0E1128;
+}
+.dotnet
+{
+    background-color: #512BD4;
+}
+
+.chip
+{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    /* font-weight: var(--font-weight-300); */
+
+    /* background: rgb(70, 69, 69); */
+
+    border: 1px solid var(--muted);
+    border-radius: var(--radii-md);
+    column-gap: var(--lspace-5);
+
+    backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%);
+	background-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 10px 10px 15px 0px rgba(255, 255, 255, 0.05);
+}
+
+.mission-pill
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0px 10px;
+    font-size:smaller;
+    font-weight: var(--font-weight-300);
+
+    /* background: rgb(70, 69, 69); */
+    backdrop-filter: blur(15px) saturate(250%);
+	-webkit-backdrop-filter: blur(15px) saturate(250%);
+	background-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.05);
+
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+}
+
+.profile-picture
+{
+    aspect-ratio: 1/1;
+    width: 64px;
+    object-fit: cover;
+    border-radius: var(--radii-lg);
+}
+
+.disable-chip
+{
+    background-color:rgba(73, 73, 73, 0.1);
+    color: grey;
+    cursor: default;
+}
