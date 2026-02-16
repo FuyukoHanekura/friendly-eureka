@@ -35,6 +35,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Separator between Featured Projects and About sections
 
+## [0.6.0] - 2026-02-16
+### Added
+- Encom:Pod project on Godot
+- Orenda and the lost owl on Unity
+- DalRiata on Unreal Engine
+
+## [0.5.0] - 2025-10-26
+### Added
+- Glass effect on nav bar
+- Animation on chevrons
+
+### Changed
+- Refactored nav bar and footer CSS, change pictures file path
+- New slide with vignette effect
+- Border on navbar
+- Slider/Carousel takes 100 viewport height
+- Hero section size
+
 ## [0.4.0] - 2025-09-28
 ### Added
 - Short presentation section in landing page

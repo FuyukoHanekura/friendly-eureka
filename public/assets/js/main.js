@@ -1,19 +1,21 @@
-// Set dark theme by default
-document.documentElement.setAttribute('data-theme', 'dark');
-
 // Carousel functionality
 
 // Data for slides
 const slides = [
     {
-        bg: 'assets/img/BackgroundThumbnail2.png',
+        bg: 'assets/img/BackgroundThumbnail3.png',
         title: "Portfolio",
         subtitle: ['Web Dev', 'Portfolio'],
     },
     {
-        bg: 'assets/img/BackgroundThumbnail3.png',
-        title: 'Placeholder',
-        subtitle: ['Subtitle 1', 'Subtitle 2'],
+        bg: 'assets/img/Walkthrough_ENCOM_PoD_30.png',
+        title: 'Encom PoD',
+        subtitle: ['Godot', 'C#'],
+    },
+    {
+        bg: 'assets/img/dalriata02.png',
+        title: 'DalRiata',
+        subtitle: ['Unreal Engine 5', 'Blueprint'],
     },
 ];
 
