@@ -204,7 +204,7 @@ nav
 	flex-direction: column;
 	align-items: center;
 	justify-content: start;
-	row-gap: var(--lspace-100);
+	row-gap: var(--lspace-10);
 }
 
 #work h2
@@ -224,6 +224,11 @@ nav
 	padding: var(--lspace-30) var(--lspace-0);
 	margin: var(--lspace-0) var(--lspace-20);
 	min-height: 19.375rem;
+}
+
+.featured-work > a
+{
+	min-width: 200px;
 }
 
 hr.separator.radii-full

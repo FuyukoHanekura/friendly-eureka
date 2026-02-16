@@ -57,7 +57,7 @@ header > a:hover
     width: 100%;
     max-width: 1160px;
     margin-inline: auto;
-    padding-inline: var(--lspace-20);
+    padding-inline: var(--lspace-25);
 
     position: relative;
     top: -125px;
