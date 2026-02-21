@@ -255,6 +255,26 @@ video
     row-gap: var(--lspace-20);
 }
 
+.credit
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-10);
+}
+
+.creditsubbox
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--lspace-20);
+}
+
+.creditsubbox > h3
+{
+    margin: 0px;
+    font-style: italic;
+}
+
 .credit-card
 {
     display:flex;

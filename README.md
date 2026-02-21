@@ -2,7 +2,7 @@
 A minimalist portfolio showcasing gameplay programming projects (UE5, Unity, Godot) and hobbies.
 Tech: HTML/CSS/JS, NGINX + PHP-FPM.
 
-![GitHub Created At](https://img.shields.io/github/created-at/fuyukohanekura/friendly-eureka) ![GitHub Tag](https://img.shields.io/github/v/tag/fuyukohanekura/friendly-eureka) ![Maintenance](https://img.shields.io/maintenance/yes/2025) ![GitHub last commit](https://img.shields.io/github/last-commit/fuyukohanekura/friendly-eureka)
+![GitHub Created At](https://img.shields.io/github/created-at/fuyukohanekura/friendly-eureka) ![GitHub Tag](https://img.shields.io/github/v/tag/fuyukohanekura/friendly-eureka) ![Maintenance](https://img.shields.io/maintenance/yes/2026) ![GitHub last commit](https://img.shields.io/github/last-commit/fuyukohanekura/friendly-eureka)
 [![Code License](https://img.shields.io/badge/Code-MIT-blue?style=flat)](LICENSE) [![Content License](https://img.shields.io/badge/Content-CC%20BY--SA%204.0-pink?style=flat)](CONTENT_LICENSE)
 
 ## Structure

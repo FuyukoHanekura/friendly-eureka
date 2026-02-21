@@ -14,26 +14,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - (placeholder)
 
-## [0.5.0] - 2025-10-26
+
+## [0.7.0] - 2025-10-26
 ### Added
-- Thumbnails for hero section
-- Class for button in nav called chip
-- Class for button on right-side of nav to add spacing
-- Aria label for SVG chevron on the hero section
-- Class for button in footer called chip-2
-- Glassmorphism for Nav bar and button
-- Carousel Slider
+- New wireframes of credits section and work page
 
 ### Changed
-- Move assets directory, inside public directory
-- Changed css, js and img path
-- Renamed id Myself to id about for more clarity
-- Switch id Carousel row for more clarity
-- Hero section takes the full viewport height
-- Hero class behavior, with chevron now at the bottom and title card class in the middle of the carousel slider
+- ReadMe maintenance badge updated (date changed)
+- Icon for project pages display their own icon thumbnail
+- Credits people section is now splitted by roles
+- Changelog having two 0.5.0 versions
 
 ### Removed
-- Separator between Featured Projects and About sections
+- Projects folder button temporary removed
 
 ## [0.6.0] - 2026-02-16
 ### Added
@@ -45,13 +38,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Glass effect on nav bar
 - Animation on chevrons
+- Thumbnails for hero section
+- Class for button in nav called chip
+- Class for button on right-side of nav to add spacing
+- Aria label for SVG chevron on the hero section
+- Class for button in footer called chip-2
+- Glassmorphism for Nav bar and button
+- Carousel Slider
 
 ### Changed
 - Refactored nav bar and footer CSS, change pictures file path
 - New slide with vignette effect
 - Border on navbar
-- Slider/Carousel takes 100 viewport height
 - Hero section size
+- Move assets directory, inside public directory
+- Changed css, js and img path
+- Renamed id Myself to id about for more clarity
+- Switch id Carousel row for more clarity
+- Hero section takes the full viewport height
+- Hero class behavior, with chevron now at the bottom and title card class in the middle of the carousel slider
+
+### Removed
+- Separator between Featured Projects and About sections
 
 ## [0.4.0] - 2025-09-28
 ### Added
