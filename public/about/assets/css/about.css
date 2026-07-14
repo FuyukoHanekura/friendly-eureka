@@ -237,3 +237,9 @@ form > textarea
 	font-family: "Noto Sans";
 }
 
+.form-submitted-result
+{
+	color: #4da935;
+    border: 1px solid #4da935;
+    background-color: rgb(142 255 170 / 10%);
+}

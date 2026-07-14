@@ -28,6 +28,7 @@ vendor/
 .env.*
 .secrets/
 scripts/*key
+config/
 
 # Media dumps
 assets/raw/
