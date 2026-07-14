@@ -14,6 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - (placeholder)
 
+## [0.8.0] - 2026-07-14
+### Added
+- About me page
+- Contact form working with JS/PHP
+
+### Changed
+- Wireframe about the about me page
+
 
 ## [0.7.0] - 2026-02-22
 ### Added
