@@ -114,3 +114,18 @@ html
 	color: var(--text);
 	scroll-behavior: smooth;
 }
+
+.chip.chip-current
+{
+	color: var(--text);	
+}
+
+.chip.chip-current:hover
+{
+	border: 1px solid rgba(255, 255, 255, 0);
+	backdrop-filter: unset;
+	-webkit-backdrop-filter: unset;
+	background-color: unset;
+	color: var(--text);
+
+}

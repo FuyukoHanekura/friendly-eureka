@@ -3,7 +3,7 @@
 // Data for slides
 const slides = [
     {
-        bg: 'assets/img/BackgroundThumbnail3.png',
+        bg: 'assets/img/Portfolio_Illustration.jpg',
         title: "Portfolio",
         subtitle: ['Web Dev', 'Portfolio'],
     },
